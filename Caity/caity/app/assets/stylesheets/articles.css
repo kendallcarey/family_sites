@@ -1,0 +1,15 @@
+@font-face {
+font-family: 'thiamine';
+src: url("<%= asset_path 'assets/thiamine.otf' %>");
+}
+
+h1 {
+padding-top: 2.15em;
+font-family: 'thiamine';
+color: white;
+font-size: 8em;
+}
+
+#blog-container {
+
+}
