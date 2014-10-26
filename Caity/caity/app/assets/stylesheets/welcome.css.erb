@@ -1,5 +1,5 @@
 
-#main-content {
+body {
   margin-top: 0px;
   text-align: center;
   background: url("<%= asset_path 'food.jpg' %>") no-repeat center center fixed;
@@ -150,30 +150,6 @@ a:hover{
   color: #007bb6;
 }
 
-.curtainContainer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.curtainContainer .curtain {
-  width: 100%;
-  height: 1px;
-  background-color: #000000;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  opacity: 0
-}
-
-.curtainContainer .copy {
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
 p, h2, h3 {
   color: white;
 }
@@ -184,14 +160,16 @@ p, h2, h3 {
   padding-bottom: 200px;
   width: 40em;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
+  text-align: center;
 }
 
 #contact {
+  text-align: center;
   width: 40em;
   padding-bottom: 200px;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   margin: auto;
   margin-top: 300px;
 }
@@ -204,8 +182,8 @@ p, h2, h3 {
   margin-top: 5em;
 }
 
-#offset {
-  padding-top: 200px;
+#offset, #offset2 {
+  margin: 480px;
 }
 
 #name {
@@ -218,5 +196,5 @@ p, h2, h3 {
 }
 
 footer {
-  padding: 100px
+  padding: 50px
 }

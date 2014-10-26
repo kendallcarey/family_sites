@@ -1,18 +1,27 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<a href="/articles"><h1>Caity's Blog!</h1></a>
 
-<p>
-  <strong>Text:</strong>
+<div id="show">
+<%= image_tag @article.photo.url(:medium) %>
+<h2 class="title">
+  <%= @article.title %>
+</h2>
+
+<p class="text">
   <%= @article.text %>
 </p>
 
-<h3>Comments</h3>
+<div id="edit-link">
+<%= link_to 'Edit Post', edit_article_path(@article) %>
+|
+<%= link_to 'Back', articles_path %>
+</div>
+
+<div id="comments">
+</div>
+<p>Comments</p>
 <%= render @article.comments %>
 
-<h3>Add a comment:</h3>
+<p>Add a comment:</p>
 <%= render "comments/form" %>
 
-<%= link_to 'Back', articles_path %>
-<%= link_to 'Edit', edit_article_path(@article) %>
+</div>

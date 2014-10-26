@@ -1,20 +1,31 @@
-<%= form_for @article do |f| %>
-  <% if @article.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@article.errors.count, "error") %> prohibited
-      this article from being saved:</h2>
+<%= form_for @article, :html => { :multipart => true }  do |f| %>
+<% if @article.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+    this article from being saved:</h2>
     <ul>
-    <% @article.errors.full_messages.each do |msg| %>
+      <% @article.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
-    <% end %>
+      <% end %>
     </ul>
   </div>
   <% end %>
+
+  <div class="text-field">
+  </div>
+
+  <p>
+    <%= f.file_field :photo %>
+  </p>
+
+  <div class="text-field">
+  </div>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
-
+  <div class="text-field">
+  </div>
   <p>
     <%= f.label :text %><br>
     <%= f.text_area :text %>
@@ -23,4 +34,4 @@
   <p>
     <%= f.submit %>
   </p>
-<% end %>
+  <% end %>

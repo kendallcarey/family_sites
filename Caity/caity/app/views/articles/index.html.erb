@@ -1,20 +1,18 @@
 <div id="blog-container">
-<h1>Caity's Blog!</h1>
-
-<%= link_to 'New article', new_article_path %>
-
+<h1><a href="/articles">Caity's Blog!</a></h1>
+<div id="table">
+<br>
+<h3 class="new"><%= link_to 'Create New Post', new_article_path %></h3>
+<br>
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="2"></th>
+    <th>__Previous Posts__</th>
   </tr>
 
 <% @articles.each do |article| %>
   <tr>
-    <td><%= article.title %></td>
-    <td><%= article.text %></td>
-    <td><%= link_to 'Show', article_path(article) %></td>
+    <td><%= link_to article.title, article_path(article) %></td>
+    <td colspan="100"></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Delete', article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -22,3 +20,12 @@
 <% end %>
 </table>
 </div>
+<div id="post">
+  <% @articles.each do |article| %>
+    <%= article.title %>
+    <%= article.text %>
+    <% end %>
+</div>
+</div>
+<footer>
+</footer>

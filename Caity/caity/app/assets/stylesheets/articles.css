@@ -1,15 +1,73 @@
 @font-face {
-font-family: 'thiamine';
-src: url("<%= asset_path 'assets/thiamine.otf' %>");
+  font-family: 'thiamine';
+  src: url("<%= asset_path 'assets/thiamine.otf' %>");
 }
 
-h1 {
-padding-top: 2.15em;
-font-family: 'thiamine';
-color: white;
-font-size: 8em;
+h1 a {
+  padding-top: 2.15em;
+  font-family: 'thiamine';
+  color: white;
+  font-size: 1em;
 }
 
-#blog-container {
+tr {
+  color: white;
+}
 
+td {
+  color: yellow;
+}
+
+#table {
+  float: left;
+  background-color: black;
+  opacity: 0.8;
+  margin: 10px;
+}
+
+#post {
+  float: right;
+}
+
+#show, #edit, #new-blog, #post {
+  margin: auto;
+  margin-top: 300px;
+  background-color: black;
+  opacity: 0.8;
+  width: 40em;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.title, .header {
+  font-size: 4em;
+  color: yellow;
+}
+
+.text {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.new {
+  float: left;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#edit-link {
+  padding: 20px;
+}
+
+.text-field {
+  padding: 10px;
+}
+
+textarea {
+    width: 500px;
+    height:500px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
