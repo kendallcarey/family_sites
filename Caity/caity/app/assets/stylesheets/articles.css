@@ -39,6 +39,10 @@ td {
   padding: 10px;
 }
 
+#show {
+  margin-bottom: 0px;
+}
+
 .title, .header {
   font-size: 4em;
   color: yellow;
@@ -70,4 +74,24 @@ textarea {
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#all-comments {
+  text-align: left;
+  color: black;
+  background-color: white;
+  width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+
+}
+
+#all-comments-header {
+  font-size: 24px;
+  color: black;
+}
+
+.comments {
+  color: black;
 }

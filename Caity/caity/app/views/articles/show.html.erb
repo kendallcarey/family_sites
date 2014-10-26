@@ -18,10 +18,13 @@
 
 <div id="comments">
 </div>
-<p>Comments</p>
-<%= render @article.comments %>
 
-<p>Add a comment:</p>
-<%= render "comments/form" %>
 
+</div>
+<div id="all-comments">
+<p class="comments">Add a Comment:</p>
+<p class="comments"><%= render "comments/form" %></p>
+<br>
+<h3 id="all-comments-header">All Comments</h3>
+<p class="comments"><%= render @article.comments %></p>
 </div>
