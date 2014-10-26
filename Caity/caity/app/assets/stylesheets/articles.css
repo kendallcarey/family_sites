@@ -12,10 +12,12 @@ h1 a {
 
 tr {
   color: white;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 td {
   color: yellow;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #table {
@@ -37,6 +39,7 @@ td {
   width: 40em;
   margin-bottom: 50px;
   padding: 10px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #show {
@@ -69,18 +72,18 @@ td {
 }
 
 textarea {
-    width: 500px;
-    height:500px;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 500px;
+  height:500px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #all-comments {
   text-align: left;
   color: black;
   background-color: white;
-  width: 40em;
+  width: 41em;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -94,4 +97,8 @@ textarea {
 
 .comments {
   color: black;
+}
+
+img {
+  opacity: 1;
 }

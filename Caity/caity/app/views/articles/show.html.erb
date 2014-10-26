@@ -1,4 +1,4 @@
-<a href="/articles"><h1>Caity's Blog!</h1></a>
+<h1><a href="/articles">Caity's Adventures!</a></h1>
 
 <div id="show">
 <%= image_tag @article.photo.url(:medium) %>
@@ -27,4 +27,6 @@
 <br>
 <h3 id="all-comments-header">All Comments</h3>
 <p class="comments"><%= render @article.comments %></p>
+</div>
+<div id="comments">
 </div>

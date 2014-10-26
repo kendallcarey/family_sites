@@ -16,3 +16,18 @@ label {
   outline: 1;
   border: 3px inset;
 }
+
+#comments-comment p {
+  color: black;
+  padding: 7px;
+}
+
+#delete-button {
+  background-color: black;
+  text-align: right;
+}
+
+#commenter-name {
+  font-weight: bold;
+  display: inline-block;
+}
