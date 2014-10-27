@@ -22,6 +22,7 @@ end
 
 def show
   @article = Article.find(params[:id])
+  @new_comment = @article.comments.build
 end
 
 def edit
@@ -46,7 +47,7 @@ end
 
 private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :photo)
   end
 
 end

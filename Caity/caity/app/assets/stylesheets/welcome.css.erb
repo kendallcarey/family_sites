@@ -1,5 +1,5 @@
 
-#main-content {
+body {
   margin-top: 0px;
   text-align: center;
   background: url("<%= asset_path 'food.jpg' %>") no-repeat center center fixed;
@@ -25,11 +25,12 @@ h1 {
 
 .link {
   padding-top: 20px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 a {
   padding-top: 30px;
-  /*font-family: Helvetica;*/
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 16px;
   color: white;
   text-decoration: none;
@@ -53,8 +54,8 @@ a:hover{
 }
 
 .nav-item {
-    display: inline-block;
-  }
+  display: inline-block;
+}
 
 .navbar {
   width: 100%;
@@ -150,73 +151,70 @@ a:hover{
   color: #007bb6;
 }
 
-.curtainContainer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.curtainContainer .curtain {
-  width: 100%;
-  height: 1px;
-  background-color: #000000;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  opacity: 0
-}
-
-.curtainContainer .copy {
-  position: absolute;
-  bottom: 30%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
 p, h2, h3 {
   color: white;
 }
 
 #about {
   margin: auto;
-  margin-top: 600px;
+  margin-top: 677px;
   padding-bottom: 200px;
   width: 40em;
-  background-color: black;
-  opacity: 0.7;
+  height: 8em;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #contact {
+  text-align: center;
   width: 40em;
   padding-bottom: 200px;
-  background-color: black;
-  opacity: 0.7;
+  background-color: rgba(0,0,0,0.8);
   margin: auto;
   margin-top: 300px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #about-me {
   font-size: 2em;
+  padding-top: 10px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #about-content {
-  margin-top: 5em;
+  text-align: left;
+  float: left;
+  margin-top: 2em;
+  margin-left: 1em;
+  display: inline-block;
+  width: 450px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-#offset {
-  padding-top: 200px;
+#main-photo {
+  width: 150px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  float: right;
+  display: inline-block;
+}
+
+#offset, #offset2 {
+  margin: 480px;
 }
 
 #name {
   font-size:2em;
   padding-top: 100px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 #email {
   padding-top: 30px;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 footer {
-  padding: 100px
+  padding: 50px
 }

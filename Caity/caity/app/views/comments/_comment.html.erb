@@ -1,15 +1,16 @@
+<div id="comments-comment">
 <p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
+  <p id="commenter-name"><%= comment.commenter %></p>
+  <strong>says</strong>
 </p>
 
 <p>
-  <strong>Comment:</strong>
   <%= comment.body %>
 </p>
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+<p id="delete-button">
+  <%= link_to 'Delete', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 </p>
+</div>
