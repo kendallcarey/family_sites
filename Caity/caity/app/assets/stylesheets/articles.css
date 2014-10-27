@@ -10,32 +10,43 @@ h1 a {
   font-size: 1em;
 }
 
-tr {
+#table tr {
   color: white;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding: 10px;
 }
 
-td {
+#table td {
   color: yellow;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  padding: 6px;
+}
+
+#table th {
+  font-size: 24px;
+  color: yellow;
 }
 
 #table {
   float: left;
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0,0,0,0.8);
   margin: 10px;
+  display: inline-block;
+  margin-top: 300px;
+  padding: 10px;
+  border-spacing: 10px;
+  border-collapse: separate;
 }
 
 #post {
   float: right;
+  display: inline-block;
 }
 
 #show, #edit, #new-blog, #post {
   margin: auto;
   margin-top: 300px;
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0,0,0,0.8);
   width: 40em;
   margin-bottom: 50px;
   padding: 10px;
@@ -74,7 +85,6 @@ td {
 textarea {
   width: 500px;
   height:500px;
-  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -83,11 +93,11 @@ textarea {
   text-align: left;
   color: black;
   background-color: white;
-  width: 41em;
+  width: 40.5em;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
-
+  padding:7px;
 }
 
 #all-comments-header {
@@ -97,8 +107,53 @@ textarea {
 
 .comments {
   color: black;
+  padding: 5px;
 }
 
-img {
-  opacity: 1;
+#picture {
+  margin-top: 20px;
+}
+
+#table-posts {
+  display: inline-block;
+}
+
+#add-comment, #all-comments-header {
+  font-weight: bold;
+  margin: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+label {
+  color: white;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.imgbutton {
+  background: #d11717;
+  border: 2px solid #eee;
+  height: 38px;
+  width: 125px;
+  margin: 50px 0 0 50px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  /*Rounded Corners*/
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ border-radius: 10px;
+
+ /*Gradient*/
+ background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+ background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+ /*Shadow*/
+ -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
 }

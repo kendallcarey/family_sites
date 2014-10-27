@@ -1,7 +1,7 @@
 <h1><a href="/articles">Caity's Adventures!</a></h1>
 
 <div id="show">
-<%= image_tag @article.photo.url(:medium) %>
+<p id="picture"><%= image_tag @article.photo.url(:medium) %></p>
 <h2 class="title">
   <%= @article.title %>
 </h2>
@@ -22,7 +22,7 @@
 
 </div>
 <div id="all-comments">
-<p class="comments">Add a Comment:</p>
+<p class="comments" id="add-comment">Add a Comment</p>
 <p class="comments"><%= render "comments/form" %></p>
 <br>
 <h3 id="all-comments-header">All Comments</h3>
