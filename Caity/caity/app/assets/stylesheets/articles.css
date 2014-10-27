@@ -74,6 +74,11 @@ h1 a {
   font-weight: bold;
 }
 
+.new-header label {
+  color: white;
+  padding:7px;
+}
+
 #edit-link {
   padding: 20px;
 }
@@ -130,8 +135,8 @@ label {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-.imgbutton {
-  background: #d11717;
+.submit input {
+/*  background: #d11717;
   border: 2px solid #eee;
   height: 38px;
   width: 125px;
@@ -155,5 +160,5 @@ label {
  /*Shadow*/
  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
  -moz-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
- box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);*/
 }
