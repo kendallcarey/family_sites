@@ -30,6 +30,8 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 gem "wysiwyg-rails"
 
+gem "font-awesome-rails"
+
 # gem 'font-awesome-less'
 
 # Use ActiveModel has_secure_password
