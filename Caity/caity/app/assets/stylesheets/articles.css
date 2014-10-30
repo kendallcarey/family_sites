@@ -59,9 +59,10 @@ h1 a {
   margin-bottom: 0px;
 }
 
-.title a, .header {
+#show .title, .header, #post .title a {
   font-size: 4em;
   color: yellow;
+  margin: 10px;
 }
 
 .text {
@@ -76,9 +77,13 @@ h1 a {
   font-weight: bold;
 }
 
-.new-header label {
+
+.new-header label, #article_title {
   color: white;
-  padding:7px;
+  margin-top:15px;
+  background-color: rgba(0,0,0,0.8);
+  border: solid 1px #252525;
+  text-align: center;
 }
 
 #edit {
@@ -88,7 +93,11 @@ h1 a {
 }
 
 #edit-link {
-  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#edit-link a {
+  padding: 40px;
 }
 
 .text-field {
@@ -153,4 +162,16 @@ label {
  padding: 5px;
  margin: 10px;
  margin-bottom: 25px;
+}
+
+ul li {
+  color: white;
+}
+
+.field_with_errors label {
+  color: white;
+}
+
+.froala-element .not-msie .f-basic {
+  height: 500px;
 }

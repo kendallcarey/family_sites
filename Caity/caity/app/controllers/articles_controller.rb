@@ -12,6 +12,9 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+    p "*"*50
+    p article_params
+    p "*"*50
 
     if @article.save
       redirect_to @article

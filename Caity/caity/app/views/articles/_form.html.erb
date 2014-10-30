@@ -10,28 +10,26 @@
     </ul>
   </div>
   <% end %>
-
-  <div class="text-field">
-  </div>
-
   <p>
     <%= f.file_field :photo %>
   </p>
-
-  <div class="text-field">
-  </div>
+  <p class="text-field">
+  </p>
   <p class="new-header">
     <%= f.label :title %><br>
+  </p>
+  <p>
     <%= f.text_field :title %>
   </p>
-  <div class="text-field">
-  </div>
+  <p class="text-field">
+  </p>
   <p class="new-header">
     <%= f.label :text %><br>
-    <%= f.text_area :text, id: "edit", name: "content" %>
   </p>
-
+  <p>
+    <%= f.text_area :text, id: "text" %>
+  </p>
   <p class="submit">
-    <%= f.submit %>
+    <%= f.submit value: "Create Post" %>
   </p>
   <% end %>
