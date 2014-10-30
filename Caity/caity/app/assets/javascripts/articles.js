@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('#edit').editable({
+$(document).on("page:change", function() {
+  $('#text').editable({
     inlineMode: false,
 })
 });
