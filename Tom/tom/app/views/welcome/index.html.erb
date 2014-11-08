@@ -1,2 +1,18 @@
-<h1>Tom Carey's Website</h1>
-<%= link_to 'Check out my blog', controller: 'articles' %>
+<nav id="navbar" data-ui="nav">
+  <div id="navbar-left">
+    <div class= "nav-link"><a data-scroll href = "#">HOME</a></div>
+    <div class= "nav-link"><a data-scroll href = "#">ABOUT</a></div>
+    <div class= "nav-link"><a data-scroll href = "#">CONTACT</a></div>
+  </div>
+  <div class= "navbar-right">
+    <div id= "facebook" class="nav-item" >
+      <a class= "nav-logo" href = "https://www.facebook.com/caity.carey">
+        <i class= "fa fa-facebook-square"></i></a>
+      </div>
+    </nav>
+    <div id="header">
+      <h1>Tom Carey</h1>
+    </div>
+    <div id="blog-link">
+      <%= link_to 'Check out my blog!', controller: 'articles' %>
+    </div>

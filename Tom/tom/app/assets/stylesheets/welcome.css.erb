@@ -1,6 +1,5 @@
 body {
   margin-top: 0px;
-  text-align: center;
   background: url("<%= asset_path 'ireland.jpg' %>") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,4 +7,46 @@ body {
   background-size: cover;
   min-height: 800px;
   min-width: 1024px;
+}
+
+#header h1 {
+  text-align: center;
+  margin-top: 300px;
+  font-family: Old Standard TT;
+  font-weight: bold;
+  color: #FFCC00;
+  font-size: 4rem;
+}
+
+#blog-link a {
+  text-decoration: none;
+  color: #FFCC00;
+  text-align: center;
+}
+
+#navbar {
+  margin-top: 0px;
+  background-color: #666699;
+  height: 3rem;
+  width: 100%;
+  z-index: 1001;
+  box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+  display: inline-block;
+}
+
+#navbar-left {
+  display: inline-block;
+  margin-left: 3%;
+  left: 0;
+  margin-top: 1.2rem;
+  min-width: 505px;
+  margin-right: 1.2rem;
+}
+
+.nav-link a {
+  color: #CCCCCC;
+  display: inline-block;
+  text-decoration: none;
 }
