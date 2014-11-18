@@ -1,5 +1,6 @@
 body {
   margin-top: 0px;
+  text-align: center;
   background: url("<%= asset_path 'ireland.jpg' %>") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,25 +25,38 @@ body {
   text-align: center;
 }
 
-#navbar {
-  margin-top: 0px;
-  background-color: #666699;
-  height: 3rem;
-  width: 100%;
-  z-index: 1001;
-  box-shadow: 0 3px 3px rgba(1,1,1,0.2);
-  -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
-  -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+/*Nav Bar*/
+
+.nav-logo {
+  text-decoration: none;
+  color: #CCCCCC;
+  font-size: 1.2rem;
+  top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.4rem;
+}
+
+.nav-item {
   display: inline-block;
 }
 
-#navbar-left {
-  display: inline-block;
+.navbar {
+  background-color: #666699;
+}
+
+.navbar-right, .navbar-left {
+  text-align: center;
+  display: inline;
+  position: fixed;
+}
+
+.navbar-left {
   margin-left: 3%;
   left: 0;
   margin-top: 1.2rem;
   min-width: 505px;
-  margin-right: 1.2rem;
 }
 
 .nav-link a {
@@ -50,3 +64,53 @@ body {
   display: inline-block;
   text-decoration: none;
 }
+
+.navbar-right {
+  margin-right: 5%;
+  right: 0;
+  margin-top: 1rem;
+}
+
+.navbar-left a:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #73665d;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  transform: translateY(-10px);
+  background: #fff;
+  top: 110%
+}
+
+.navbar-left a:hover:after {
+  height: 3px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.nav-logo{
+  border: 1px solid #CCCCCC;
+  border-radius: 0.35rem;
+}
+
+.nav-logo:hover{
+  background-color: #CCCCCC;
+}
+
+#facebook:hover a {
+  color:#4c66a4;
+}
+
+ul .nav .navbar-nav .navbar-right {
+  padding-right: 20px;
+}
+
